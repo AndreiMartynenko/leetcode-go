@@ -32,6 +32,12 @@ import (
 
 func maxProfit(prices []int) int {
 	var minPrice = math.Inf(1)
+	/*
+		In Go, math.Inf(1) represents positive infinity, while math.Inf(-1) represents negative infinity.
+		So math.Inf(1) is used to initialize minPrice to a very large positive value,
+		which is higher than any price in the prices slice,
+		and can be updated to a smaller value later on during the loop.
+	*/
 	var maxProfit = 0
 	for i := 0; i < len(prices); i++ {
 		if float64(prices[i]) < minPrice {

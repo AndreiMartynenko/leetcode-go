@@ -14,14 +14,20 @@ package main
 import "fmt"
 
 func containsDuplicate(nums []int) bool {
+	// Create a map to store the occurrence of each number
 	set := make(map[int]bool)
+
+	// Loop through the numbers in the array
 	for _, num := range nums {
+		// If the number already exists in the map, it's a duplicate
 		if set[num] {
 			return true
 		} else {
+			// If it doesn't exist, add it to the map
 			set[num] = true
 		}
 	}
+	// If no duplicates were found, return false
 	return false
 }
 
