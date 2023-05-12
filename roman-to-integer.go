@@ -43,8 +43,70 @@ Hash Table, Math, String
 
 */
 
+/*in JS
+var romanToInt = function(s) {
+  const romanMap = {
+    'I': 1,
+    'V': 5,
+    'X': 10,
+    'L': 50,
+    'C': 100,
+    'D': 500,
+    'M': 1000
+  };
+  let result = 0;
+  for (let i = 0; i < s.length; i++) {
+    const currentVal = romanMap[s[i]];
+    const nextVal = romanMap[s[i + 1]];
+    if (nextVal && currentVal < nextVal) {
+      result -= currentVal;
+    } else {
+      result += currentVal;
+    }
+  }
+  return result;
+}
+*/
+
 package main
 
-func romanToInt(s string) int {
+import "fmt"
 
+func romanToInt(s string) int {
+	// Create a map to store the values of each Roman numeral
+	romanMap := map[string]int{
+		"I": 1,
+		"V": 5,
+		"X": 10,
+		"L": 50,
+		"C": 100,
+		"D": 500,
+		"M": 1000,
+	}
+	// Initialize a variable to store the result
+	var result = 0
+	// Loop through each character in the input string
+	for i := 0; i < len(s); i++ {
+		// Get the value of the current Roman numeral
+		currentVal := romanMap[string(s[i])]
+		// Get the value of the next Roman numeral, if it exists
+		var nextVal int
+		if i+1 < len(s) {
+			nextVal = romanMap[string(s[i+1])]
+		}
+		// If the next value is greater than the current value, subtract the current value
+		if nextVal > currentVal {
+			result -= currentVal
+			// Otherwise, add the current value to the result
+		} else {
+			result += currentVal
+		}
+	}
+	// Return the final result
+	return result
+}
+
+func main() {
+	result := romanToInt("III")
+	fmt.Println(result)
 }
