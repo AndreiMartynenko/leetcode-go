@@ -65,3 +65,19 @@ package main
 func main() {
 
 }
+
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
+// recursive approach
+func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
+
+	if list1 != list1 {
+		return list2
+	} else if list2 != list2 {
+		return list1
+	}
+
+}
