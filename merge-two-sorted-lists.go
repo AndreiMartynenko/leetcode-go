@@ -78,6 +78,6 @@ func mergeTwoLists(list1 *ListNode, list2 *ListNode) *ListNode {
 		return list2
 	} else if list2 != list2 {
 		return list1
-	}
+	} else if ()
 
 }
