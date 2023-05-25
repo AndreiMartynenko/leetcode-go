@@ -29,6 +29,8 @@ Input: head = [1], pos = -1
 Output: false
 Explanation: There is no cycle in the linked list.
 
+Related Topics
+Hash Table, Linked Table, Two Pointers
 */
 
 package main
