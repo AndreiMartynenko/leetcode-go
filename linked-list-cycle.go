@@ -35,10 +35,10 @@ Hash Table, Linked Table, Two Pointers
 
 package main
 
-func main() {
+// func main() {
 
-}
+// }
 
-func hasCycle(head *ListNode) bool {
+// func hasCycle(head *ListNode) bool {
 
-}
+// }
