@@ -21,7 +21,6 @@ String, Trie
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -50,8 +49,8 @@ func longestCommonPrefix(strs []string) string {
 	return prefix
 }
 
-func main() {
-	var arr = []string{"flower", "flow", "flight"}
-	var result = longestCommonPrefix(arr)
-	fmt.Println(result)
-}
+// func main() {
+// 	var arr = []string{"flower", "flow", "flight"}
+// 	var result = longestCommonPrefix(arr)
+// 	fmt.Println(result)
+// }

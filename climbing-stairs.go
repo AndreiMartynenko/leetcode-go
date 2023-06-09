@@ -49,3 +49,49 @@ func main() {
 	var example = climbStairs(2)
 	fmt.Println(example)
 }
+
+// Other solution
+var cache = make(map[int]int)
+
+func climbStairs2(n int) int {
+	if val, ok := cache[n]; ok {
+		return val
+	}
+
+	if n < 3 {
+		return n
+	}
+
+	cache[n] = climbStairs2(n-1) + climbStairs2(n-2)
+	return cache[n]
+}
+
+// Other solution
+/*
+The number of ways to get to the i'th step is much like a Fibonacci number:
+ways[i] = ways[i-1] + ways[i-2], where ways[i] is the number of ways
+to get on the i'th step.
+
+So, to start the calculation process we first need
+to set the first two numbers in this sequence.
+If we think about it a bit, there is 1 way to get t
+o the step where we already stay from the beginning (step number 0),
+and 1 way to get to the next step (step number 1).
+
+The number of ways to get on the next step is:
+ways[2] = ways[0] + ways[1], and so on.
+
+
+*/
+func climbStairs3(n int) int {
+	zero, one := 1, 1
+	var next int
+
+	for i := 1; i < n; i++ {
+		next = zero + one
+		zero = one
+		one = next
+	}
+
+	return one
+}

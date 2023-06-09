@@ -70,8 +70,6 @@ var romanToInt = function(s) {
 
 package main
 
-import "fmt"
-
 func romanToInt(s string) int {
 	// Create a map to store the values of each Roman numeral
 	romanMap := map[string]int{
@@ -106,7 +104,7 @@ func romanToInt(s string) int {
 	return result
 }
 
-func main() {
-	result := romanToInt("III")
-	fmt.Println(result)
-}
+// func main() {
+// 	result := romanToInt("III")
+// 	fmt.Println(result)
+// }

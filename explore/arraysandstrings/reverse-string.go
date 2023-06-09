@@ -14,3 +14,8 @@ func reverseString(s []byte) {
 		rightCharacter--
 	}
 }
+
+func main() {
+	var testWord = "Hello World!"
+	reverseString([]byte(testWord))
+}
