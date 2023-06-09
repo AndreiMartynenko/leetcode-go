@@ -22,7 +22,14 @@ nums is sorted in non-decreasing order.
 
 package main
 
+import "sort"
+
 func sortedSquares(nums []int) []int {
 	var newArr = []int{}
+	for i := 0; i < len(nums); i++ {
+		newArr = append(newArr, nums[i]*nums[i])
+	}
+	sort.Ints(newArr)
 
+	return newArr
 }
