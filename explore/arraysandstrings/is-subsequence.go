@@ -25,18 +25,23 @@ Output: false
 
 package main
 
+import "fmt"
+
 func isSubsequence(s string, t string) bool {
-	// for i := 0; i <= len(s); i++ {
-	// 	for j := 0; j <= len(t); j++{
-	// 	}
-	// }
-	leftS := 0
-	rightS := len(t) - 1
-	leftT := 0
-	right := len(s) - 1
-
-	for left < right {
-		newInd := 
+	i, j := 0, 0
+	for i < len(s) && j < len(t) {
+		if s[i] == t[j] {
+			i++
+		}
+		j++
 	}
+	return i == len(s)
 
+}
+
+func main() {
+	s := "ace"
+	t := "abcde"
+	result := isSubsequence(s, t)
+	fmt.Println(result)
 }
