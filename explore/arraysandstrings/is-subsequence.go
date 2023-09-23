@@ -25,8 +25,6 @@ Output: false
 
 package main
 
-import "fmt"
-
 func isSubsequence(s string, t string) bool {
 	i, j := 0, 0
 	for i < len(s) && j < len(t) {
@@ -39,9 +37,11 @@ func isSubsequence(s string, t string) bool {
 
 }
 
+/*
 func main() {
 	s := "ace"
 	t := "abcde"
 	result := isSubsequence(s, t)
 	fmt.Println(result)
 }
+*/

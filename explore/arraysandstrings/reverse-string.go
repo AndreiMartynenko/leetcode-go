@@ -57,8 +57,10 @@ func reverseString(s []byte) []byte {
 
 }
 
-// func main() {
-// 	var testWord = "Hello World!"
-// 	var newWord = reverseString([]byte(testWord))
-// 	fmt.Println(string(newWord))
-// }
+/*
+func main() {
+	var testWord = "Hello World!"
+	var newWord = reverseString([]byte(testWord))
+	fmt.Println(string(newWord))
+}
+*/
