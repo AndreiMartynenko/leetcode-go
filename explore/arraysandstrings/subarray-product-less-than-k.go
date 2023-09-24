@@ -21,6 +21,8 @@ Output: 0
 
 package main
 
+import "fmt"
+
 func numSubarrayProductLessThanK(nums []int, k int) int {
 
 	if k <= 1 {
@@ -41,6 +43,7 @@ func numSubarrayProductLessThanK(nums []int, k int) int {
 }
 
 func main() {
-	newArr := []int{}
-	result := numSubarrayProductLessThanK(newArr, 10)
+	newArr := []int{10, 5, 2, 6}
+	result := numSubarrayProductLessThanK(newArr, 100)
+	fmt.Println(result)
 }

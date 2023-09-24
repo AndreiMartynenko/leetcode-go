@@ -25,7 +25,6 @@ Output: [4,9,9,49,121]
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -40,8 +39,10 @@ func squaresOfaSortedAarray(nums []int) []int {
 
 }
 
+/*
 func main() {
 	newArr := []int{-4, -1, 0, 3, 10}
 	result := squaresOfaSortedAarray(newArr)
 	fmt.Println(result)
 }
+*/
