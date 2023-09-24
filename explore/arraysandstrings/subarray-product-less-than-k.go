@@ -39,3 +39,8 @@ func numSubarrayProductLessThanK(nums []int, k int) int {
 	return ans
 
 }
+
+func main() {
+	newArr := []int{}
+	result := numSubarrayProductLessThanK(newArr, 10)
+}
