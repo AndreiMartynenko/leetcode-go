@@ -29,11 +29,11 @@ func numSubarrayProductLessThanK(nums []int, k int) int {
 	ans, left, curr := 0, 0, 1
 	for right := 0; right < len(nums); right++ {
 		curr *= nums[right]
-		for curr > k {
-			curr -= nums[left]
+		for curr >= k {
+			curr /= nums[left]
 			left++
 		}
-		ans = Math.max(ans, right-left+1)
+		ans += right - left + 1
 
 	}
 	return ans
