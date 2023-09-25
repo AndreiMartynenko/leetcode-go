@@ -43,7 +43,7 @@ func numSubarrayProductLessThanK(nums []int, k int) int {
 }
 
 func main() {
-	newArr := []int{10, 5, 2, 6}
-	result := numSubarrayProductLessThanK(newArr, 100)
+	newArr := []int{1, 2, 3}
+	result := numSubarrayProductLessThanK(newArr, 0)
 	fmt.Println(result)
 }
