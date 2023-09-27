@@ -14,3 +14,7 @@ package main
 func waysToSplitArray(nums []int) int {
 
 }
+
+func main() {
+
+}
