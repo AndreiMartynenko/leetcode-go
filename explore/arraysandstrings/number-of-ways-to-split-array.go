@@ -14,7 +14,8 @@ package main
 func waysToSplitArray(nums []int) int {
 	prefix := [nums{0}]
 	for i := 1;  i < n; i++ {
-		
+		prefix = append(prefix[n-1] - prexix[i])
+
 	}
 
 }
