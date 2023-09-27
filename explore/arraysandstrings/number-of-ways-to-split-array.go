@@ -11,6 +11,8 @@ The second section should have at least one number.
 
 package main
 
+import "fmt"
+
 func waysToSplitArray(nums []int) int {
 
 }
@@ -18,5 +20,6 @@ func waysToSplitArray(nums []int) int {
 func main() {
 	newArr := []int{10, 4, -8, 7}
 	result := waysToSplitArray(newArr)
+	fmt.Println(result)
 
 }
