@@ -17,5 +17,6 @@ func waysToSplitArray(nums []int) int {
 
 func main() {
 	newArr := []int{10, 4, -8, 7}
+	result := waysToSplitArray(newArr)
 
 }
