@@ -12,9 +12,5 @@ The second section should have at least one number.
 package main
 
 func waysToSplitArray(nums []int) int {
-	prefix := [nums{0}]
-	for i := 1;  i < n; i++ {
-
-	}
 
 }
