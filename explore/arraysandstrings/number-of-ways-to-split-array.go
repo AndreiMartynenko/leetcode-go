@@ -14,6 +14,16 @@ package main
 import "fmt"
 
 func waysToSplitArray(nums []int) int {
+	n := len(nums)           // Get the length of the input array 'nums'
+	prefix := make([]int, n) // Create a slice 'prefix' to store prefix sums with the same length as 'nums'
+
+	prefix[0] = nums[0] // The first element of the prefix sum array is the same as the first element of 'nums'
+
+	// Iterate through the elements of 'nums' starting from the second element
+	for i := 1; i < n; i++ {
+		// Calculate the current prefix sum by adding the previous prefix sum with the current element of 'nums'
+		prefix[i] = prefix[i-1] + nums[i]
+	}
 
 }
 
