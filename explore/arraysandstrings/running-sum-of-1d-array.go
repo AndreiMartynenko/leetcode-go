@@ -24,6 +24,8 @@ Output: [3,4,6,16,17]
 
 */
 
+package main
+
 func runningSum(nums []int) []int {
 
 }
