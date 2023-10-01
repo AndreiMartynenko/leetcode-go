@@ -11,8 +11,6 @@ The second section should have at least one number.
 
 package main
 
-import "fmt"
-
 func waysToSplitArray(nums []int) int {
 	n := len(nums)           // Get the length of the input array 'nums'
 	prefix := make([]int, n) // Create a slice 'prefix' to store prefix sums with the same length as 'nums'
@@ -42,10 +40,12 @@ func waysToSplitArray(nums []int) int {
 
 }
 
+/*
 func main() {
 	newArr := []int{10, 4, -8, 7}
 	result := waysToSplitArray(newArr)
 	fmt.Println(result)
 }
+*/
 
 // 2
