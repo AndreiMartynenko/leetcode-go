@@ -26,10 +26,18 @@ Output: [3,4,6,16,17]
 
 package main
 
+import "fmt"
+
 func runningSum(nums []int) []int {
 	for i := 1; i < len(nums); i++ {
 		nums[i] += nums[i-1]
 	}
 	return nums
 
+}
+
+func main() {
+	newArr := []int{3, 1, 2, 10, 1}
+	result := runningSum(newArr)
+	fmt.Println(result)
 }
