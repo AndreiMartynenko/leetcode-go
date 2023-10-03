@@ -1,4 +1,5 @@
 /*
+Two Pointers
 392. Is Subsequence.
 Given two strings s and t, return true if s
 is a subsequence of t, or false otherwise.
@@ -26,15 +27,21 @@ Output: false
 package main
 
 func isSubsequence(s string, t string) bool {
+	// Initialize two pointers, i and j, to track positions in s and t
 	i, j := 0, 0
+
+	// Iterate through both strings
 	for i < len(s) && j < len(t) {
+		// If the characters match, move the pointer in s
 		if s[i] == t[j] {
 			i++
 		}
+		// Move the pointer in t regardless
 		j++
 	}
-	return i == len(s)
 
+	// If we reached the end of s, it means s is a subsequence of t
+	return i == len(s)
 }
 
 /*

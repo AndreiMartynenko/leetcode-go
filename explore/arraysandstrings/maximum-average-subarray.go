@@ -1,4 +1,6 @@
 /*
+Sliding Window
+
 Maximum Average Subarray I
 
 You are given an integer array nums

@@ -1,6 +1,8 @@
 /*
-713. Subarray Product Less Than K
+Sliding Window
 
+713. Subarray Product Less Than K
+Example 3.
 Given an array of integers nums and an integer k,
 return the number of contiguous subarrays where the
 product of all the elements in the subarray is strictly less than k.

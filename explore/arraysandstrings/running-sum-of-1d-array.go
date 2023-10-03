@@ -1,4 +1,6 @@
 /*
+Prefix Sum
+
 Running Sum of 1d Array
 
 
