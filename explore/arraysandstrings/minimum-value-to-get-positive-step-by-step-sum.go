@@ -38,3 +38,39 @@ Output: 5
 */
 
 package main
+
+func minStartValue(nums []int) int {
+	// Start with startValue = 1.
+	startValue := 1
+
+	//While we haven't found the first valid startValue
+	for {
+		total := startValue
+		isValid := true
+		// The step-by-step total "total" equals startValue at the beginning.
+		// Use boolean parameter "isValid" to record whether the total
+		// is larger than or equal to 1.
+
+		// Iterate over the array "nums".
+		for i := 0; i < len(nums); i++ {
+			total += nums[i]
+			if total < 1 {
+				isValid = false
+				break
+			}
+		}
+
+		// If "total" is less than 1, we shall try a larger startValue,
+		// we mark "isValid" as "false" and break the current iteration.
+		if total < 1 {
+			if isValid {
+				return startValue
+			}
+
+		}
+		// If "isVaild" is true, meaning "total" is never less than 1 in the
+		// iteration, therefore we return this "startValue". Otherwise, we
+		// go ahead and try "startValue" + 1 as the new "startValue".
+		startValue++
+	}
+}
