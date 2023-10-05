@@ -58,7 +58,7 @@ package main
 
 // Approach 1: Prefix Sum
 
-func getAverages(nums []int, k int) []int {
+func getAverages1(nums []int, k int) []int {
 	// When a single element is considered then its average will be the number itself only.
 	if k == 0 {
 		return nums
@@ -90,6 +90,45 @@ func getAverages(nums []int, k int) []int {
 		subArraySum := prefix[rightBound+1] - prefix[leftBound]
 		average := int(subArraySum / int64(2*k+1))
 		averages[i] = average
+	}
+
+	return averages
+}
+
+// Approach 2: Sliding Window
+
+func getAverages2(nums []int, k int) []int {
+	// When a single element is considered then its average will be the number itself only.
+	if k == 0 {
+		return nums
+	}
+
+	n := len(nums)
+	averages := make([]int, n)
+	for i := range averages {
+		averages[i] = -1
+	}
+
+	// Any index will not have 'k' elements in its left and right.
+	if 2*k+1 > n {
+		return averages
+	}
+
+	// First get the sum of the first window of the 'nums' array.
+	windowSum := 0
+	for i := 0; i < 2*k+1; i++ {
+		windowSum += nums[i]
+	}
+	averages[k] = windowSum / (2*k + 1)
+
+	// Iterate on the rest of the indices which have at least 'k' elements
+	// on their left and right sides.
+	for i := 2*k + 1; i < n; i++ {
+		// We remove the discarded element and add the new element to get the current window sum.
+		// 'i' is the index of the newly inserted element, and
+		// 'i - (window size)' is the index of the last removed element.
+		windowSum = windowSum - nums[i-(2*k+1)] + nums[i]
+		averages[i-k] = windowSum / (2*k + 1)
 	}
 
 	return averages
