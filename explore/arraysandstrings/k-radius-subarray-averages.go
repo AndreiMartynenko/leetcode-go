@@ -55,3 +55,7 @@ elements before and after index 0.
 */
 
 package main
+
+func getAverages(nums []int, k int) []int {
+
+}
