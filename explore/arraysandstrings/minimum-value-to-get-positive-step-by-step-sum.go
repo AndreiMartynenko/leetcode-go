@@ -39,6 +39,7 @@ Output: 5
 
 package main
 
+// Approach 1: Brute Force
 func minStartValue(nums []int) int {
 	// Start with startValue = 1.
 	startValue := 1
@@ -73,4 +74,53 @@ func minStartValue(nums []int) int {
 		// go ahead and try "startValue" + 1 as the new "startValue".
 		startValue++
 	}
+}
+
+// Approach 2: Binary Search
+
+// Function to find the minimum valid start value
+func minStartValue(nums []int) int {
+	// Let n be the length of the array "nums", m be the absolute value
+	// of the lower boundary of the element. In this question we have m = 100.
+	n := len(nums)
+	m := 100
+
+	// Set left and right boundaries according to left = 1, right = m * n + 1.
+	left := 1
+	right := m*n + 1
+
+	// Binary search loop
+	for left < right {
+		// Get the middle index "middle" of the two boundaries, let the start value
+		// be "middle". The initial step-by-step total "total" equals to middle as well.
+		// Use boolean parameter "isValid" to record whether the total
+		// is greater than or equal to 1.
+		middle := (left + right) / 2
+		total := middle
+		isValid := true
+
+		// Iterate over the array "nums".
+		for _, num := range nums {
+			// In each iteration, calculate "total" plus the element "num" in the array.
+			total += num
+
+			// If "total" is less than 1, we shall try a larger start value,
+			// we mark "isValid" as "false" and break the current iteration.
+			if total < 1 {
+				isValid = false
+				break
+			}
+		}
+
+		// Check if middle is valid, and reduce the search space by half.
+		if isValid {
+			right = middle
+		} else {
+			left = middle + 1
+		}
+	}
+
+	// When the left and right boundaries coincide, we have found
+	// the target value, that is, the minimum valid startValue.
+	return left
 }
