@@ -124,3 +124,69 @@ func minStartValue(nums []int) int {
 	// the target value, that is, the minimum valid startValue.
 	return left
 }
+
+// Функция для поиска минимального допустимого значения startValue
+func minStartValue(nums []int) int {
+	// Пусть n - длина массива "nums", m - абсолютное значение
+	// нижней границы элемента. В этой задаче у нас m = 100.
+	n := len(nums)
+	m := 100
+	// Установим левую и правую границы: left = 1, right = m * n + 1.
+	left := 1
+	right := m*n + 1
+	// Цикл бинарного поиска
+	for left < right {
+		// Получим средний индекс "middle" между двумя границами,
+		// установим начальное значение "middle" в качестве startValue.
+		// Начальное суммарное значение "total" также равно "middle".
+		// Используем булев параметр "isValid" для отслеживания того,
+		// больше ли или равно суммарное значение 1.
+		middle := (left + right) / 2
+		total := middle
+		isValid := true
+
+		// Итерируемся по массиву "nums".
+		for _, num := range nums {
+			// На каждой итерации считаем сумму "total" и элемента "num" в массиве.
+			total += num
+			// Если "total" меньше 1, нужно попробовать большее startValue.
+			// Устанавливаем "isValid" в "false" и прерываем текущую итерацию.
+			if total < 1 {
+				isValid = false
+				break
+			}
+		}
+		// Проверяем, является ли middle допустимым, и сужаем
+		// границы поиска вдвое.
+		if isValid {
+			right = middle
+		} else {
+			left = middle + 1
+		}
+	}
+	// Когда левая и правая границы совпадают, мы нашли
+	// целевое значение, то есть минимальное допустимое startValue.
+	return left
+}
+
+// Approach 3: Prefix total
+
+func minStartValue(nums []int) int {
+	// minVal will store the minimum step-by-step total,
+	// while total will keep track of the current step-by-step total.
+	minVal, total := 0, 0
+
+	// Iterate over the elements in the nums array.
+	for i := 0; i < len(nums); i++ {
+		// Update the current step-by-step total.
+		total += nums[i]
+
+		// Keep track of the minimum step-by-step total.
+		if total < minVal {
+			minVal = total
+		}
+	}
+
+	// Ensure the minimum step-by-step total is at least 1 by adjusting the startValue.
+	return -minVal + 1
+}
