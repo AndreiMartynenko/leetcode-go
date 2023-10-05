@@ -40,7 +40,7 @@ Output: 5
 package main
 
 // Approach 1: Brute Force
-func minStartValue(nums []int) int {
+func minStartValue1(nums []int) int {
 	// Start with startValue = 1.
 	startValue := 1
 
@@ -79,7 +79,7 @@ func minStartValue(nums []int) int {
 // Approach 2: Binary Search
 
 // Function to find the minimum valid start value
-func minStartValue(nums []int) int {
+func minStartValue2(nums []int) int {
 	// Let n be the length of the array "nums", m be the absolute value
 	// of the lower boundary of the element. In this question we have m = 100.
 	n := len(nums)
@@ -127,7 +127,7 @@ func minStartValue(nums []int) int {
 
 // Approach 3: Prefix total
 
-func minStartValue(nums []int) int {
+func minStartValue3(nums []int) int {
 	// minVal will store the minimum step-by-step total,
 	// while total will keep track of the current step-by-step total.
 	minVal, total := 0, 0
