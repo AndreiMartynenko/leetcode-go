@@ -22,10 +22,11 @@ package main
 
 import "fmt"
 
+// TreeNode represents a node in a binary tree
 type TreeNode struct {
-	Val   int
-	Left  *TreeNode
-	Right *TreeNode
+	Val   int       // Value of the node
+	Left  *TreeNode // Pointer to the left child node
+	Right *TreeNode // Pointer to the right child node
 }
 
 func maxDepth(root *TreeNode) int {
