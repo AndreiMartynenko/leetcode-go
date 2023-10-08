@@ -59,6 +59,7 @@ func main() {
 	root1.Right = &TreeNode{Val: 20}
 	root1.Right.Left = &TreeNode{Val: 15}
 	root1.Right.Right = &TreeNode{Val: 7}
+	// Calculate the maximum depth of the tree rooted at 'root1'
 	result1 := maxDepth(root1)
 	fmt.Println(result1) // Output: 3
 
