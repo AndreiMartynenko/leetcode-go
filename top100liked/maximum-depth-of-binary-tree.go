@@ -40,3 +40,11 @@ func maxDepth(root *TreeNode) int {
 		return rightDepth + 1
 	}
 }
+
+func main() {
+	// Example 1
+	root1 := &TreeNode{Val: 3}
+	root1.Left = &TreeNode{Val: 9}
+	root1.Right = &TreeNode{Val: 20}
+	root1.Right.Left = &TreeNode{Val: 15}
+	root1.Right.Right = &TreeNode{Val: 7}
