@@ -20,6 +20,8 @@ Output: 2
 
 package main
 
+import "fmt"
+
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
@@ -48,3 +50,13 @@ func main() {
 	root1.Right = &TreeNode{Val: 20}
 	root1.Right.Left = &TreeNode{Val: 15}
 	root1.Right.Right = &TreeNode{Val: 7}
+	result1 := maxDepth(root1)
+	fmt.Println(result1) // Output: 3
+
+	// Example 2
+	root2 := &TreeNode{Val: 1}
+	root2.Right = &TreeNode{Val: 2}
+
+	result2 := maxDepth(root2)
+	fmt.Println(result2) // Output: 2
+}
