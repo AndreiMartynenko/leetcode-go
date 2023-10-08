@@ -29,7 +29,10 @@ type TreeNode struct {
 	Right *TreeNode // Pointer to the right child node
 }
 
+// maxDepth calculates the maximum depth of the binary tree rooted at 'root'
 func maxDepth(root *TreeNode) int {
+	// Base case: if 'root' is nil (i.e., we've reached a leaf node or an empty tree),
+	// return 0 to indicate that there are no more levels below this point.
 	if root == nil {
 		return 0
 	}
