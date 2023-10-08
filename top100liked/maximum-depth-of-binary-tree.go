@@ -37,9 +37,14 @@ func maxDepth(root *TreeNode) int {
 		return 0
 	}
 
+	// Recursively calculate the maximum depth of the left subtree.
 	leftDepth := maxDepth(root.Left)
+
+	// Recursively calculate the maximum depth of the right subtree.
 	rightDepth := maxDepth(root.Right)
 
+	// The maximum depth of the tree rooted at 'root' is the maximum of the depths of
+	// its left and right subtrees, plus one (for the current level).
 	if leftDepth > rightDepth {
 		return leftDepth + 1
 	} else {
