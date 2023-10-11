@@ -8,6 +8,6 @@ It is guaranteed that the input will have a duplicate character.
 
 package main
 
-func main() {
+func repeatedCharacter() {
 
 }
