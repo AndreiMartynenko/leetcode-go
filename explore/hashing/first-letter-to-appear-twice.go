@@ -17,3 +17,5 @@ func repeatedCharacter() {
 func main() {
 	fmt.Println("Hello World")
 }
+
+//First approach
