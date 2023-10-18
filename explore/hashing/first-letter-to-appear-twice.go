@@ -18,4 +18,6 @@ func main() {
 	fmt.Println("Hello World")
 	result := repeatedCharacter()
 
+	fmt.Println(result)
+
 }
