@@ -16,6 +16,7 @@ func repeatedCharacter() {
 
 func main() {
 	fmt.Println("Hello World")
+	fmt.Println("Work hard, don't waste your time!!!")
 }
 
 //First approach
