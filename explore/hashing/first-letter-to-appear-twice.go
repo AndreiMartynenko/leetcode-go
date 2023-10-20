@@ -8,15 +8,12 @@ It is guaranteed that the input will have a duplicate character.
 
 package main
 
-import "fmt"
-
 func repeatedCharacter() {
 
 }
 
 func main() {
-	fmt.Println("Hello World")
-	fmt.Println("Work hard, don't waste your time!!!")
+
 }
 
 //First approach
