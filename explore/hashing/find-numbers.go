@@ -12,4 +12,11 @@ package main
 
 func findNumbers(nums []int) []int {
 
+	seen := make(map[int]bool)
+
+	// First pass: populate the map with all numbers in the array
+	for _, num := range nums {
+		seen[num] = true
+	}
+
 }
