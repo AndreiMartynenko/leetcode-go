@@ -15,8 +15,10 @@ func repeatedCharacter(s string) byte {
 		if seen[s[i]] {
 			return s[i]
 		}
+		seen[s[i]] = true
 	}
 
+	return 0 // This line should never be reached since it's guaranteed that there will be a duplicate character.
 }
 
 func main() {
