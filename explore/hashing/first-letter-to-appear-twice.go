@@ -8,6 +8,8 @@ It is guaranteed that the input will have a duplicate character.
 
 package main
 
+import "fmt"
+
 func repeatedCharacter(s string) byte {
 	seen := make(map[byte]bool)
 
@@ -22,7 +24,9 @@ func repeatedCharacter(s string) byte {
 }
 
 func main() {
-
+	s := "2351"
+	result := repeatedCharacter(s)
+	fmt.Printf("The first character to appear twice is: %c\n", result)
 }
 
 //First approach
