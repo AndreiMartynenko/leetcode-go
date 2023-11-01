@@ -30,3 +30,10 @@ func findNumbers(nums []int) []int {
 	return result
 
 }
+
+// func main() {
+// 	nums := []int{1, 2, 3, 4, 5, 7, 9, 10}
+// 	result := findNumbers(nums)
+// 	fmt.Println("Numbers that satisfy the criteria:")
+// 	fmt.Println(result)
+// }
