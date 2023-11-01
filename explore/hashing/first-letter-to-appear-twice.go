@@ -8,7 +8,14 @@ It is guaranteed that the input will have a duplicate character.
 
 package main
 
-func repeatedCharacter() {
+func repeatedCharacter(s string) byte {
+	seen := make(map[byte]bool)
+
+	for i := 0; i < len(s); i++ {
+		if seen[s[i]] {
+			return s[i]
+		}
+	}
 
 }
 
