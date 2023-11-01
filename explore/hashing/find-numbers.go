@@ -19,4 +19,14 @@ func findNumbers(nums []int) []int {
 		seen[num] = true
 	}
 
+	// Second pass: check if x + 1 and x - 1 are not in the map
+	result := []int{}
+	for _, num := range nums {
+		if !seen[num+1] && !seen[num-1] {
+			result = append(result, num)
+		}
+	}
+
+	return result
+
 }
