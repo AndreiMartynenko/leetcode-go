@@ -35,3 +35,7 @@ appear in nums.
 */
 
 package main
+
+func missingNumber(nums []int) int {
+
+}
