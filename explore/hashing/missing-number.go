@@ -44,5 +44,6 @@ func missingNumber(nums []int) int {
 	for _, num := range nums {
 		actualSum += num
 	}
+	return expectedSum - actualSum
 
 }
