@@ -24,3 +24,12 @@ there is no 2, 4, 6, or 8 in arr.
 */
 
 package main
+
+func countElements(arr []int) int {
+	count := 0
+	elements := make(map[int]bool)
+
+	for _, num := range arr {
+		elements[num] = true
+	}
+}
