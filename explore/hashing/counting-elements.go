@@ -22,3 +22,5 @@ Output: 0
 Explanation: No numbers are counted, cause
 there is no 2, 4, 6, or 8 in arr.
 */
+
+package main
