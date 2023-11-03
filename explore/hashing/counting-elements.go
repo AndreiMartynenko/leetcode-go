@@ -32,4 +32,12 @@ func countElements(arr []int) int {
 	for _, num := range arr {
 		elements[num] = true
 	}
+
+	for _, num := range arr {
+		if elements[num+1] {
+			count++
+		}
+	}
+
+	return count
 }
