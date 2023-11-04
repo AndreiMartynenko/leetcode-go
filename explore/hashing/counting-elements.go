@@ -25,8 +25,6 @@ there is no 2, 4, 6, or 8 in arr.
 
 package main
 
-import "fmt"
-
 func countElements(arr []int) int {
 	count := 0
 	elements := make(map[int]bool)
@@ -44,6 +42,7 @@ func countElements(arr []int) int {
 	return count
 }
 
+/*
 func main() {
 	arr1 := []int{1, 2, 3}
 	arr2 := []int{1, 1, 3, 3, 5, 5, 7, 7}
@@ -55,3 +54,4 @@ func main() {
 	fmt.Printf("Number of elements in arr2: %d\n", result2)
 
 }
+*/
