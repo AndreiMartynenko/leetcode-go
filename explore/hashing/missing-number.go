@@ -36,8 +36,6 @@ appear in nums.
 
 package main
 
-import "fmt"
-
 func missingNumber(nums []int) int {
 	n := len(nums)
 	expectedSum := n * (n + 1) / 2
@@ -50,6 +48,8 @@ func missingNumber(nums []int) int {
 
 }
 
+/*
+
 func main() {
 	nums1 := []int{3, 0, 1}
 	nums2 := []int{9, 6, 4, 2, 3, 5, 7, 0, 1}
@@ -61,3 +61,4 @@ func main() {
 	fmt.Printf("Missing number in nums2: %d\n", missing2)
 
 }
+*/
