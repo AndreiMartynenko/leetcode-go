@@ -41,3 +41,8 @@ func countElements(arr []int) int {
 
 	return count
 }
+
+func main() {
+	arr1 := []int{1, 2, 3}
+	arr2 := []int{1, 1, 3, 3, 5, 5, 7, 7}
+}
