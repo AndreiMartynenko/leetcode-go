@@ -51,4 +51,8 @@ func missingNumber(nums []int) int {
 func main() {
 	nums1 := []int{3, 0, 1}
 	nums2 := []int{9, 6, 4, 2, 3, 5, 7, 0, 1}
+
+	missing1 := missingNumber(nums1)
+	missing2 := missingNumber(nums2)
+
 }
