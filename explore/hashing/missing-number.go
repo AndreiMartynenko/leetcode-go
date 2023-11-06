@@ -62,3 +62,7 @@ func main() {
 
 }
 */
+
+/*
+First Approach
+*/
