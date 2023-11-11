@@ -39,4 +39,11 @@ func countElements(arr []int) int {
 		elementCounts[num]++
 	}
 
+	// Check for each element if x + 1 is also present
+	for _, num := range arr {
+		if count, exists := elementCounts[num+1]; exists && count > 0 {
+			count++
+		}
+	}
+
 }
