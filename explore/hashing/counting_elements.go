@@ -34,4 +34,9 @@ func countElements(arr []int) int {
 	count := 0
 	elementCounts := make(map[int]int)
 
+	// Count the occurrences of each element in arr
+	for _, num := range arr {
+		elementCounts[num]++
+	}
+
 }
