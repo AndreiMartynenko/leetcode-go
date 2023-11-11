@@ -48,3 +48,15 @@ func countElements(arr []int) int {
 	return count
 
 }
+
+/*
+func main() {
+	// Example 1
+	arr1 := []int{1, 2, 3}
+	fmt.Println(countElements(arr1)) // Output: 2
+
+	// Example 2
+	arr2 := []int{1, 1, 3, 3, 5, 5, 7, 7}
+	fmt.Println(countElements(arr2)) // Output: 0
+}
+*/
