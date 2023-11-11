@@ -31,5 +31,7 @@ Constraints:
 package main
 
 func countElements(arr []int) int {
+	count := 0
+	elementCounts := make(map[int]int)
 
 }
