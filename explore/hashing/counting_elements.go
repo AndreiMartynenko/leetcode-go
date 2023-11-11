@@ -45,5 +45,6 @@ func countElements(arr []int) int {
 			count++
 		}
 	}
+	return count
 
 }
