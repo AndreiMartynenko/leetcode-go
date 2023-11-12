@@ -23,6 +23,11 @@ func find_longest_substring(s string, k int) int {
 
 	for end := 0; end < len(s); end++ {
 		charCount[s[end]]++
+
+		for len(charCount) > k {
+			charCount[s[start]]--
+			if charCount[s[start]] == 0 {
+				delete(charCount, s[start])
 	
 
 }
