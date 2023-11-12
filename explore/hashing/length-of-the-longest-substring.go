@@ -12,3 +12,10 @@ characters is "ece".
 */
 
 package main
+
+func find_longest_substring(s string, k int) int {
+	if k == 0 || len(s) == 0 {
+		return 0
+	}
+
+}
