@@ -18,4 +18,11 @@ func find_longest_substring(s string, k int) int {
 		return 0
 	}
 
+	charCount := make(map[byte]int)
+	start, maxLen := 0, 0
+
+	for end := 0; end < len(s); end++ {
+		charCount[s[end]]++
+	
+
 }
