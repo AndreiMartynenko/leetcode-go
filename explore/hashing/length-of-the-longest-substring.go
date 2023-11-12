@@ -28,6 +28,14 @@ func find_longest_substring(s string, k int) int {
 			charCount[s[start]]--
 			if charCount[s[start]] == 0 {
 				delete(charCount, s[start])
-	
+
+			}
+			start++
+		}
+
+		maxLen = max(maxLen, end-start+1)
+	}
+
+	return maxLen
 
 }
