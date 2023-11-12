@@ -8,8 +8,6 @@ You can return the answer in any order.
 
 package main
 
-import "fmt"
-
 func twoSum(nums []int, target int) []int {
 	indexMap := make(map[int]int) // Create a map to store the index of each number as we iterate over the nums slice.
 	for i, num := range nums {    // Iterate over each number in the nums slice.
@@ -22,9 +20,12 @@ func twoSum(nums []int, target int) []int {
 	return nil // If no two numbers add up to the target value, return nil.
 }
 
+/*
 func main() {
 	arg1 := []int{2, 7, 11, 15}  // Define the input slice of numbers.
 	arg2 := 9                    // Define the target value.
 	result := twoSum(arg1, arg2) // Call the twoSum function with the input and target values.
 	fmt.Println(result)          // Print the result of the twoSum function.
 }
+
+*/

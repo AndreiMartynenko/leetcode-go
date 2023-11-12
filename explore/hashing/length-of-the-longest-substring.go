@@ -13,6 +13,8 @@ characters is "ece".
 
 package main
 
+import "fmt"
+
 func find_longest_substring(s string, k int) int {
 	if k == 0 || len(s) == 0 {
 		return 0
@@ -45,4 +47,11 @@ func max(a, b int) int {
 		return a
 	}
 	return b
+}
+
+func main() {
+	s := "eceba"
+	k := 2
+	result := find_longest_substring(s, k)
+	fmt.Println(result) // Output: 3
 }
