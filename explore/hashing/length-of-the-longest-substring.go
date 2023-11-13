@@ -42,12 +42,12 @@ func find_longest_substring(s string, k int) int {
 
 }
 
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
+// func max(a, b int) int {
+// 	if a > b {
+// 		return a
+// 	}
+// 	return b
+// }
 
 func main() {
 	s := "eceba"
