@@ -25,3 +25,13 @@ func intersect(nums [][]int) []int {
 			result[num]++
 		}
 
+			// Iterate through the rest of the arrays
+	for i := 1; i < len(nums); i++ {
+		currentMap := make(map[int]int)
+
+		// Count the frequency of each number in the current array
+		for _, num := range nums[i] {
+			currentMap[num]++
+		}
+
+
