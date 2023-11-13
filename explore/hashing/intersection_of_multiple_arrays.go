@@ -14,7 +14,9 @@ return [3, 4]. 3 and 4 are the only numbers that are in all arrays.
 
 package main
 
-import "sort"
+import (
+	"sort"
+)
 
 func intersect(nums [][]int) []int {
 	if len(nums) == 0 {
@@ -65,3 +67,12 @@ func min(a, b int) int {
 	}
 	return b
 }
+
+/*
+func main() {
+	nums := [][]int{{3, 1, 2, 4, 5}, {1, 2, 3, 4}, {3, 4, 5, 6}}
+	result := intersect(nums)
+	fmt.Println(result) // Output: [3 4]
+}
+
+*/
