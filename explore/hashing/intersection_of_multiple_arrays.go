@@ -18,3 +18,10 @@ func intersect(nums [][]int) []int {
 	if len(nums) == 0 {
 		return []int{}
 	}
+
+		// Initialize the result with the numbers from the first array
+		result := make(map[int]int)
+		for _, num := range nums[0] {
+			result[num]++
+		}
+
