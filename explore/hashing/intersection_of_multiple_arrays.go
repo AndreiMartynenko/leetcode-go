@@ -56,4 +56,12 @@ func intersect(nums [][]int) []int {
 	// Sort the array before returning
 	sort.Ints(intersection)
 	return intersection
+
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+	return b
 }
