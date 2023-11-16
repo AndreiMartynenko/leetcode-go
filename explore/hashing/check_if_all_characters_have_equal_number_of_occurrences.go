@@ -48,7 +48,14 @@ func checkEqualFrequency(s string) bool {
 
 	var firstFrequency int
 	for _, freq := range frequency {
+		if firstFrequency == 0 {
+			firstFrequency = freq
+		} else if firstFrequency != freq {
+			return false
+		}
 
 	}
+
+	return true
 
 }
