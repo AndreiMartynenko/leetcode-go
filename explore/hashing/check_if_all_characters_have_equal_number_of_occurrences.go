@@ -63,6 +63,7 @@ func checkEqualFrequency(s string) bool {
 }
 
 /*
+
 func main() {
 	s1 := "abacbc"
 	fmt.Println(checkEqualFrequency(s1)) // Output: true
