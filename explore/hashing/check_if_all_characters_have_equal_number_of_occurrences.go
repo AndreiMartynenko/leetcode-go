@@ -32,7 +32,23 @@ which is not the same number of times.
 
 package main
 
-func areOccurrencesEqual(s string) bool {
-	count := 0
+import "unicode"
+
+func checkEqualFrequency(s string) bool {
+	frequency := make(map[rune]int)
+
+	// Count the frequency of each character in the string
+	for _, char := range s {
+		if unicode.IsLetter(char) {
+			frequency[char]++
+		}
+	}
+
+	// Check if all characters have the same frequency
+
+	var firstFrequency int
+	for _, freq := range frequency {
+
+	}
 
 }
