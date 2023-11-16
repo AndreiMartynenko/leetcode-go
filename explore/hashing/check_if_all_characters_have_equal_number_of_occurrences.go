@@ -32,7 +32,9 @@ which is not the same number of times.
 
 package main
 
-import "unicode"
+import (
+	"unicode"
+)
 
 func checkEqualFrequency(s string) bool {
 	frequency := make(map[rune]int)
@@ -59,3 +61,14 @@ func checkEqualFrequency(s string) bool {
 	return true
 
 }
+
+/*
+func main() {
+	s1 := "abacbc"
+	fmt.Println(checkEqualFrequency(s1)) // Output: true
+
+	s2 := "aaabb"
+	fmt.Println(checkEqualFrequency(s2)) // Output: false
+}
+
+*/
