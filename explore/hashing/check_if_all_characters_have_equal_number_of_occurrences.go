@@ -30,6 +30,8 @@ which is not the same number of times.
 
 */
 
+package main
+
 func areOccurrencesEqual(s string) bool {
 	count := 0
 
