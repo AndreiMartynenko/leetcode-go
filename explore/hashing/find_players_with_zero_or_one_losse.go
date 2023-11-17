@@ -50,8 +50,6 @@ All matches[i] are unique.
 
 package main
 
-import "fmt"
-
 // findPlayers takes a 2D array `matches` and returns a list where the first element is a list of
 // players who have not lost any matches, and the second element is a list of players who have lost exactly one match.
 // The results are sorted in increasing order.
@@ -102,15 +100,20 @@ func findPlayers(matches [][]int) [][]int {
 
 // sortIntSlice sorts an integer slice in increasing order
 func sortIntSlice(slice []int) {
+	// Outer loop: Iterate over each element in the slice
 	for i := 0; i < len(slice)-1; i++ {
+		// Inner loop: Iterate over the remaining unsorted elements in the slice
 		for j := i + 1; j < len(slice); j++ {
+			// Compare adjacent elements
 			if slice[i] > slice[j] {
+				// Swap elements if they are in the wrong order
 				slice[i], slice[j] = slice[j], slice[i]
 			}
 		}
 	}
 }
 
+/*
 func main() {
 	// Example input: matches represent the winners and losers of matches
 	matches := [][]int{
@@ -124,3 +127,5 @@ func main() {
 	result := findPlayers(matches)
 	fmt.Println(result) // Output: [[3 4 5] [2]]
 }
+
+*/
