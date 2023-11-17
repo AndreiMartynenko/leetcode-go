@@ -57,4 +57,13 @@ func numberOfSubarrays(nums []int, k int) int {
 
 	return count
 
+
+	func main() {
+		nums := []int{1, 1, 2, 1, 1}
+		k := 3
+	
+		result := countNiceSubarrays(nums, k)
+		fmt.Println(result) // Output: 2
+	}
+
 }
