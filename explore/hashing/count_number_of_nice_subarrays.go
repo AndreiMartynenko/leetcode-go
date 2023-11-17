@@ -37,7 +37,7 @@ func numberOfSubarrays(nums []int, k int) int {
 
 	count := 0
 	curr := 0
-	addCount := make(map[int]int)
+	oddCount := make(map[int]int)
 
 	// Initialize the map with 0: 1, considering an empty prefix
 	oddCount[0] = 1
@@ -46,10 +46,15 @@ func numberOfSubarrays(nums []int, k int) int {
 		// Update curr based on whether num is odd or even
 		curr += num % 2
 
-			// Check if (curr - k) exists in the map, if yes, increment the count
-			if val, ok := oddCount[curr-k]; ok {
-				count += val
-			}
-	
+		// Check if (curr - k) exists in the map, if yes, increment the count
+		if val, ok := oddCount[curr-k]; ok {
+			count += val
+		}
+
+		// Increment the count of the current odd count in the map
+		oddCount[curr]++
+	}
+
+	return count
 
 }
