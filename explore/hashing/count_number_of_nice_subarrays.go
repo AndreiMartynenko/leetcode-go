@@ -42,4 +42,8 @@ func numberOfSubarrays(nums []int, k int) int {
 	// Initialize the map with 0: 1, considering an empty prefix
 	oddCount[0] = 1
 
+	for _, num := range nums {
+		// Update curr based on whether num is odd or even
+		curr += num % 2
+
 }
