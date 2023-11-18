@@ -26,3 +26,5 @@ Constraints:
 1 <= text.length <= 104
 text consists of lower case English letters only.
 */
+
+package main
