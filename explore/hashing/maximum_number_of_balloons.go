@@ -39,4 +39,10 @@ func maxNumberOfBalloons(text string) int {
 		'n': 0,
 	}
 
+	for _, char := range text {
+		if count, exists := balloonCounts[char]; exists {
+			balloonCounts[char] = count + 1
+		}
+	}
+
 }
