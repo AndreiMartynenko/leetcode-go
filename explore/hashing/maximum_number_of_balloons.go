@@ -29,6 +29,8 @@ text consists of lower case English letters only.
 
 package main
 
+import "math"
+
 func maxNumberOfBalloons(text string) int {
 
 	balloonCounts := map[rune]int{
@@ -44,5 +46,19 @@ func maxNumberOfBalloons(text string) int {
 			balloonCounts[char] = count + 1
 		}
 	}
+
+	// Adjust the counts for 'l' and 'o' as they need to appear twice in the word "balloon"
+	balloonCounts['l'] /= 2
+	balloonCounts['o'] /= 2
+
+	// Find the minimum count among the characters in "balloon"
+	minCount := math.MaxInt32
+	for _, count := range balloonCounts {
+		if count < minCount {
+			minCount = count
+		}
+	}
+
+	return minCount
 
 }
