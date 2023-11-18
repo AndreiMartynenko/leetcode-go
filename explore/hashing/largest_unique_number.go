@@ -36,4 +36,12 @@ func largestUniqueNumber(nums []int) int {
 
 	maxUnique := -1
 
+	for num, count := range counts {
+		if count == 1 && num > maxUnique {
+			maxUnique = num
+		}
+	}
+
+	return maxUnique
+
 }
