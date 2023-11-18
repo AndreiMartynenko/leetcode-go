@@ -30,4 +30,10 @@ func largestUniqueNumber(nums []int) int {
 
 	counts := make(map[int]int)
 
+	for _, num := range nums {
+		counts[num]++
+	}
+
+	maxUnique := -1
+
 }
