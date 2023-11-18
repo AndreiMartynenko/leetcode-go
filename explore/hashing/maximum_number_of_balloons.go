@@ -28,3 +28,15 @@ text consists of lower case English letters only.
 */
 
 package main
+
+func maxNumberOfBalloons(text string) int {
+
+	balloonCounts := map[rune]int{
+		'b': 0,
+		'a': 0,
+		'l': 0,
+		'o': 0,
+		'n': 0,
+	}
+
+}
