@@ -28,4 +28,6 @@ package main
 
 func largestUniqueNumber(nums []int) int {
 
+	counts := make(map[int]int)
+
 }
