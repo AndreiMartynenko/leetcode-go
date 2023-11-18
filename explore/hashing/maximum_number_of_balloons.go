@@ -29,7 +29,9 @@ text consists of lower case English letters only.
 
 package main
 
-import "math"
+import (
+	"math"
+)
 
 func maxNumberOfBalloons(text string) int {
 
@@ -62,3 +64,24 @@ func maxNumberOfBalloons(text string) int {
 	return minCount
 
 }
+
+/*
+
+func main() {
+	// Example 1
+	text1 := "nlaebolko"
+	result1 := maxNumberOfBalloons(text1)
+	fmt.Println(result1) // Output: 1
+
+	// Example 2
+	text2 := "loonbalxballpoon"
+	result2 := maxNumberOfBalloons(text2)
+	fmt.Println(result2) // Output: 2
+
+	// Example 3
+	text3 := "leetcode"
+	result3 := maxNumberOfBalloons(text3)
+	fmt.Println(result3) // Output: 0
+}
+
+*/
