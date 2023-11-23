@@ -12,6 +12,11 @@ return [["bat"],["nat","tan"],["ate","eat","tea"]].
 
 package main
 
+import (
+	"sort"
+	"strings"
+)
+
 func groupAnagrams(strs []string) [][]string {
 	anagrams := make(map[string][]string)
 
@@ -27,4 +32,12 @@ func groupAnagrams(strs []string) [][]string {
 	}
 
 	return result
+}
+
+func sortString(s string) string {
+	characters := strings.Split(s, "")
+
+	sort.Strings(characters)
+
+	return strings.Join(characters, "")
 }
