@@ -41,3 +41,13 @@ func sortString(s string) string {
 
 	return strings.Join(characters, "")
 }
+
+/*
+func main() {
+	strs := []string{"eat", "tea", "tan", "ate", "nat", "bat"}
+	result := groupAnagrams(strs)
+
+	fmt.Println(result)
+}
+
+*/
