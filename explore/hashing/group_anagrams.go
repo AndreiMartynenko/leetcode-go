@@ -12,12 +12,6 @@ return [["bat"],["nat","tan"],["ate","eat","tea"]].
 
 package main
 
-import (
-	"fmt"
-	"sort"
-	"strings"
-)
-
 func groupAnagrams(strs []string) [][]string {
 	anagrams := make(map[string][]string)
 
@@ -27,4 +21,10 @@ func groupAnagrams(strs []string) [][]string {
 		anagrams[sortedStr] = append(anagrams[sortedStr], str)
 	}
 
+	var result [][]string
+	for _, group := range anagrams {
+		result = append(result, group)
+	}
 
+	return result
+}
