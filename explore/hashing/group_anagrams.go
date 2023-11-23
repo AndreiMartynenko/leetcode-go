@@ -24,6 +24,7 @@ func groupAnagrams(strs []string) [][]string {
 	for _, str := range strs {
 		sortedStr := sortString(str)
 
-
+		anagrams[sortedStr] = append(anagrams[sortedStr], str)
+	}
 
 
