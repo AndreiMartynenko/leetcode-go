@@ -24,4 +24,11 @@ func minimumCardPickup(cards []int) int {
 		cardIndex[card] = i
 	}
 
+	if minLength == len(cards)+1 {
+
+		return -1
+	}
+
+	return minLength
+
 }
