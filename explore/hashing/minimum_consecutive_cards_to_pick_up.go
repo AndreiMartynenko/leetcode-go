@@ -12,4 +12,11 @@ func minimumCardPickup(cards []int) int {
 	cardIndex := make(map[int]int)
 	minLength := len(cards) + 1
 
+	for i, card := range cards {
+		if prevIndex, found := cardIndex[card]; found {
+
+			subarrayLength := i - prevIndex + 1
+			if subarrayLength < minLength {
+				minLength = subarrayLength
+
 }
