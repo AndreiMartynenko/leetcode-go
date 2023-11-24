@@ -18,5 +18,10 @@ func minimumCardPickup(cards []int) int {
 			subarrayLength := i - prevIndex + 1
 			if subarrayLength < minLength {
 				minLength = subarrayLength
+			}
+		}
+
+		cardIndex[card] = i
+	}
 
 }
