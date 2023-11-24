@@ -9,5 +9,7 @@ If the array has no duplicates, return -1.
 package main
 
 func minimumCardPickup(cards []int) int {
+	cardIndex := make(map[int]int)
+	minLength := len(cards) + 1
 
 }
