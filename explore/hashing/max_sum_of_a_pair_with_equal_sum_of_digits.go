@@ -48,3 +48,13 @@ func calculateDigitSum(num int) int {
 
 	return sum
 }
+
+/*
+func main() {
+	nums := []int{18, 43, 36, 13, 7}
+	result := maxSumOfPairWithEqualDigitSum(nums)
+
+	fmt.Println(result)
+}
+
+*/
