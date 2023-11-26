@@ -10,6 +10,8 @@ Return -1 if there is no pair of numbers with the same digit sum.
 
 package main
 
+import "strconv"
+
 func maximumSum(nums []int) int {
 
 	digitSumMap := make(map[int][]int)
@@ -38,3 +40,11 @@ func maximumSum(nums []int) int {
 func calculateDigitSum(num int) int {
 	sum := 0
 	strNum := strconv.Itoa(num)
+
+	for _, digit := range strNum {
+		digitValue, _ := strconv.Atoi(string(digit))
+		sum += digitValue
+	}
+
+	return sum
+}
