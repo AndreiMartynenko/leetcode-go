@@ -34,3 +34,7 @@ func maximumSum(nums []int) int {
 
 	return maxSum
 }
+
+func calculateDigitSum(num int) int {
+	sum := 0
+	strNum := strconv.Itoa(num)
