@@ -15,4 +15,9 @@ func maximumSum(nums []int) int {
 	digitSumMap := make(map[int][]int)
 	maxSum := -1
 
+	for i, num := range nums {
+		
+		digitSum := calculateDigitSum(num)
+
+
 }
