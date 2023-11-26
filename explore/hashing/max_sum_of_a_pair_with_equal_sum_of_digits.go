@@ -16,12 +16,12 @@ func maximumSum(nums []int) int {
 	maxSum := -1
 
 	for i, num := range nums {
-		
+
 		digitSum := calculateDigitSum(num)
 
 		if indices, found := digitSumMap[digitSum]; found {
 			for _, index := range indices {
-				
+
 				currentSum := nums[index] + num
 				if currentSum > maxSum {
 					maxSum = currentSum
@@ -29,5 +29,8 @@ func maximumSum(nums []int) int {
 			}
 		}
 
+		digitSumMap[digitSum] = append(digitSumMap[digitSum], i)
+	}
 
+	return maxSum
 }
