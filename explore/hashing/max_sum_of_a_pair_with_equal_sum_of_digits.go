@@ -11,7 +11,6 @@ Return -1 if there is no pair of numbers with the same digit sum.
 package main
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -52,9 +51,13 @@ func calculateDigitSum(num int) int {
 	return sum
 }
 
+/*
+
 func main() {
 	nums := []int{18, 43, 36, 13, 7}
 	result := maxSumOfPairWithEqualDigitSum(nums)
 
 	fmt.Println(result)
 }
+
+*/
