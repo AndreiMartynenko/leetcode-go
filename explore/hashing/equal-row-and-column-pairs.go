@@ -15,4 +15,7 @@ func numEqualPairs(grid [][]int) int {
 
 	for i := 0; i < n; i++ {
         for j := 0; j < n; j++ {
+			for k := 0; k < n; k++ {
+                for l := 0; l < n; l++ {
+
 }
