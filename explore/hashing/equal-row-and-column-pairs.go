@@ -8,3 +8,9 @@ we consider them as 1D arrays.
 */
 
 package main
+
+func numEqualPairs(grid [][]int) int {
+	n := len(grid)
+	count := 0
+
+}
