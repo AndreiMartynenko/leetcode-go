@@ -24,5 +24,6 @@ func numEqualPairs(grid [][]int) int {
 			}
 		}
 	}
+	return count / 2 // Each pair is counted twice (R, C) and (C, R)
 
 }
