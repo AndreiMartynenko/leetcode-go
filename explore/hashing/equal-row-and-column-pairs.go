@@ -55,3 +55,26 @@ func equalPairs(grid [][]int) int {
 
 	return ans
 }
+
+func main() {
+	// Example 1:
+	matrix1 := [][]int{
+		{3, 2, 1},
+		{1, 7, 6},
+		{2, 7, 7},
+	}
+
+	result1 := equalPairs(matrix1)
+	fmt.Println("Number of Equal Row and Column Pairs (Example 1):", result1)
+
+	// Example 2:
+	matrix2 := [][]int{
+		{3, 1, 2, 2},
+		{1, 4, 4, 5},
+		{2, 4, 2, 2},
+		{2, 4, 2, 2},
+	}
+
+	result2 := equalPairs(matrix2)
+	fmt.Println("Number of Equal Row and Column Pairs (Example 2):", result2)
+}
