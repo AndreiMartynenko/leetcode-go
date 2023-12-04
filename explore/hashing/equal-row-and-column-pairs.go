@@ -56,6 +56,7 @@ func equalPairs(grid [][]int) int {
 	return ans
 }
 
+/*
 func main() {
 	// Example 1:
 	matrix1 := [][]int{
@@ -78,3 +79,5 @@ func main() {
 	result2 := equalPairs(matrix2)
 	fmt.Println("Number of Equal Row and Column Pairs (Example 2):", result2)
 }
+
+*/
