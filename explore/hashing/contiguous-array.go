@@ -25,8 +25,6 @@ nums[i] is either 0 or 1.
 
 package main
 
-import "fmt"
-
 func findMaxLength(nums []int) int {
 	sumToIndex := make(map[int]int)
 	maxLen, sum := 0, 0
@@ -54,6 +52,7 @@ func findMaxLength(nums []int) int {
 
 }
 
+/*
 func main() {
 	// Example 1:
 	nums1 := []int{0, 1}
@@ -65,3 +64,5 @@ func main() {
 	result2 := findMaxLength(nums2)
 	fmt.Println("Example 2 - Maximum Length of Contiguous Subarray:", result2)
 }
+
+*/
