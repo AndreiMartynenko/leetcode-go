@@ -31,16 +31,23 @@ func findMaxLength(nums []int) int {
 
 	sumToIndex[0] = -1 // Initialize with a sum of 0 at index -1
 
-    for i, num := range nums {
-        if num == 0 {
-            sum -= 1
-        } else {
-            sum += 1
-        }
+	for i, num := range nums {
+		if num == 0 {
+			sum -= 1
+		} else {
+			sum += 1
+		}
 
 		if index, exists := sumToIndex[sum]; exists {
-            currentLen := i - index
-            if currentLen > maxLen {
-                maxLen = currentLen
+			currentLen := i - index
+			if currentLen > maxLen {
+				maxLen = currentLen
+			}
+		} else {
+			sumToIndex[sum] = i
+		}
+	}
+
+	return maxLen
 
 }
