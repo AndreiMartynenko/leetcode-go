@@ -29,4 +29,13 @@ func findMaxLength(nums []int) int {
 	sumToIndex := make(map[int]int)
 	maxLen, sum := 0, 0
 
+	sumToIndex[0] = -1 // Initialize with a sum of 0 at index -1
+
+    for i, num := range nums {
+        if num == 0 {
+            sum -= 1
+        } else {
+            sum += 1
+        }
+
 }
