@@ -38,4 +38,9 @@ func findMaxLength(nums []int) int {
             sum += 1
         }
 
+		if index, exists := sumToIndex[sum]; exists {
+            currentLen := i - index
+            if currentLen > maxLen {
+                maxLen = currentLen
+
 }
