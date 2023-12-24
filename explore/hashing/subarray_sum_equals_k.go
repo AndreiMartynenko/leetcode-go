@@ -50,9 +50,9 @@ func subarraySum(nums []int, k []int) int {
 		sum += num
 
 		// Check if (sum - k) exists in the map, if yes, increment the count
-		// if val, ok := sumCount[sum-k]; ok {
-		// 	count += val
-		// }
+		if val, ok := sumCount[sum-k]; ok {
+			count += val
+		}
 
 		// Increment the count of the current sum in the map
 		sumCount[sum]++
