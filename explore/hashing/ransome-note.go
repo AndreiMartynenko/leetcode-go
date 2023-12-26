@@ -1,5 +1,5 @@
 package main
 
-func ransomeNote() {
+func canConstruct(ransomNote string, magazine string) bool {
 
 }
