@@ -17,3 +17,8 @@ func checkDataType() {
 	fmt.Printf("variable amount=%v is of type %T \n", amount, amount)
 	fmt.Printf("variable newNewSlice =%v is of type %T \n", newNewSlice, newSlice)
 }
+
+func main() {
+	checkDataType()
+
+}
