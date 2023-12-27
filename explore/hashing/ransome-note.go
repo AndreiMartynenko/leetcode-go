@@ -32,6 +32,10 @@ ransomNote and magazine consist of lowercase English letters.
 
 func canConstruct(ransomNote string, magazine string) bool {
 
+	magazineCount := make(map[rune]int)
+
+	for _, char range magazine
+
 	return true
 
 }
