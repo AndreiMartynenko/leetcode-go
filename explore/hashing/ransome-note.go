@@ -31,7 +31,8 @@ ransomNote and magazine consist of lowercase English letters.
 */
 
 func canConstruct(ransomNote string, magazine string) bool {
-
+	// rune i used here as I am not sure about Upper or Lowercase of the input words
+	// If I know for sure I can use bytes instead
 	magazineCount := make(map[rune]int)
 
 	for _, char := range magazine {
