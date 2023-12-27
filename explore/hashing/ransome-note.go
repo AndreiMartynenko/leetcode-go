@@ -39,10 +39,13 @@ func canConstruct(ransomNote string, magazine string) bool {
 	}
 
 	for _, char := range ransomNote {
-        if magazineCount[char] == 0 {
+		if magazineCount[char] == 0 {
 
-            return false
-        }
+			return false
+		}
+
+		magazineCount[char]--
+	}
 
 	return true
 
