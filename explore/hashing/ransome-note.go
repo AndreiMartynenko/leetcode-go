@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /*
 Given two strings ransomNote and magazine, return true
 if ransomNote can be constructed by using the letters
@@ -37,6 +39,7 @@ func canConstruct(ransomNote string, magazine string) bool {
 
 	for _, char := range magazine {
 		magazineCount[char]++
+
 	}
 
 	for _, char := range ransomNote {
@@ -49,5 +52,16 @@ func canConstruct(ransomNote string, magazine string) bool {
 	}
 
 	return true
+
+}
+
+func main() {
+
+	report1 := canConstruct("hello", "helloWorld")
+	report2 := canConstruct("World!", "helloWorld!")
+	report3 := canConstruct("😀", "😀")
+	fmt.Println(report1)
+	fmt.Println(report2)
+	fmt.Println(report3)
 
 }
