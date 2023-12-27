@@ -34,7 +34,9 @@ func canConstruct(ransomNote string, magazine string) bool {
 
 	magazineCount := make(map[rune]int)
 
-	for _, char range magazine
+	for _, char := range magazine {
+		magazineCount[char]++
+	}
 
 	return true
 
