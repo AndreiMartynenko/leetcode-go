@@ -30,12 +30,13 @@ All the characters of jewels are unique.
 
 package main
 
-import "fmt"
-
 func numJewelsInStones(jewels string, stones string) int {
 	jewelSet := make(map[rune]bool)
 
+	// Create a set of jewels
+	for _, jewel := range jewels {
+		jewelSet[jewel] = true
+	}
+
 	return count
 }
-
-
