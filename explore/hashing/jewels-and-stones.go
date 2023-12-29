@@ -49,3 +49,20 @@ func numJewelsInStones(jewels string, stones string) int {
 
 	return count
 }
+
+/*
+func main() {
+	// Example 1
+	jewels1 := "aA"
+	stones1 := "aAAbbbb"
+	result1 := numJewelsInStones(jewels1, stones1)
+	fmt.Printf("Output for Example 1: %d\n", result1)
+
+	// Example 2
+	jewels2 := "z"
+	stones2 := "ZZ"
+	result2 := numJewelsInStones(jewels2, stones2)
+	fmt.Printf("Output for Example 2: %d\n", result2)
+}
+
+*/
