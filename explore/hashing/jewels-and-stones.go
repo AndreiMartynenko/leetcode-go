@@ -38,5 +38,14 @@ func numJewelsInStones(jewels string, stones string) int {
 		jewelSet[jewel] = true
 	}
 
+	count := 0
+
+	// Count the stones that are also jewels
+	for _, stone := range stones {
+		if jewelSet[stone] {
+			count++
+		}
+	}
+
 	return count
 }
