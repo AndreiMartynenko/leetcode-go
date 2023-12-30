@@ -46,6 +46,7 @@ func canConstruct(ransomNote string, magazine string) bool {
 		magazineCount[char]++
 
 	}
+//Explain this
 
 	for _, char := range ransomNote {
 		if magazineCount[char] == 0 {
