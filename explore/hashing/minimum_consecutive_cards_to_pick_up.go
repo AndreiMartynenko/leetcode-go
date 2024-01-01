@@ -33,6 +33,9 @@ func minimumCardPickup(cards []int) int {
 
 }
 
+//Testing
+/*
 func main() {
 
 }
+*/
