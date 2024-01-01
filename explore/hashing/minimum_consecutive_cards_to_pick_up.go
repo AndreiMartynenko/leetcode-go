@@ -32,3 +32,7 @@ func minimumCardPickup(cards []int) int {
 	return minLength
 
 }
+
+func main() {
+
+}
