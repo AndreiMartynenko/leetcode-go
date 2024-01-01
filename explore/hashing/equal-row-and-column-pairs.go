@@ -1,5 +1,6 @@
 /*
 HASHING
+
 Example 4: 2352. Equal Row and Column Pairs
 
 Given an n x n matrix grid, return the number of pairs (R, C)

@@ -1,5 +1,6 @@
 /*
 HASHING
+
 Contiguous Array
 
 Given a binary array nums, return the maximum length of

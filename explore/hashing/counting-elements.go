@@ -1,5 +1,6 @@
 /*
-Hashing
+HASHING
+
 Counting Elements
 
 Given an integer array arr, count how many

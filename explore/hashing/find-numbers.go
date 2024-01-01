@@ -1,5 +1,5 @@
 /*
-Hashing
+HASHING
 
 Example 3: Given an integer array nums,
 find all the numbers x in nums that
