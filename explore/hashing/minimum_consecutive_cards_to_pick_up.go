@@ -1,4 +1,7 @@
 /*
+
+HASHING
+
 Example 2: 2260. Minimum Consecutive Cards to Pick Up
 
 Given an integer array cards, find the length of the
