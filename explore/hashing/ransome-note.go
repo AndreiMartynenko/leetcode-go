@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /*
 
 HASHING
@@ -46,7 +44,7 @@ func canConstruct(ransomNote string, magazine string) bool {
 		magazineCount[char]++
 
 	}
-//Explain this
+	//Explain this
 
 	for _, char := range ransomNote {
 		if magazineCount[char] == 0 {
@@ -61,6 +59,7 @@ func canConstruct(ransomNote string, magazine string) bool {
 
 }
 
+/*
 func main() {
 
 	report1 := canConstruct("hello", "helloWorld")
@@ -71,3 +70,5 @@ func main() {
 	fmt.Println(report3)
 
 }
+
+*/
