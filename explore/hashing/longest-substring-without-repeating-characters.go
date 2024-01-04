@@ -5,5 +5,10 @@ func lengthOfLongestSubstring(s string) int {
 	maxLength := 0
 	start := 0
 
+	for end := 0; end < len(s); end++ {
+		if charIndex[s[end]] >= start {
+			start = charIndex[s[end]] + 1
+		}
+
 	return maxLength
 }
