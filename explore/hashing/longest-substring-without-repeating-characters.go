@@ -1,3 +1,11 @@
+/*
+
+HASHING
+
+Longest Substring Without Repeating Characters
+
+*/
+
 package main
 
 // Sliding Window approach
