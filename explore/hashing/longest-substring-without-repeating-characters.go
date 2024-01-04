@@ -9,6 +9,11 @@ func lengthOfLongestSubstring(s string) int {
 		if charIndex[s[end]] >= start {
 			start = charIndex[s[end]] + 1
 		}
+		charIndex[s[end]] = end
+		currentLength := end - start + 1
+		if currentLength > maxLength {
+			maxLength = currentLength
+		}
 
 	return maxLength
 }
