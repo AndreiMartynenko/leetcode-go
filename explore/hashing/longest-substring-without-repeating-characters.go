@@ -14,6 +14,7 @@ func lengthOfLongestSubstring(s string) int {
 		if currentLength > maxLength {
 			maxLength = currentLength
 		}
+	}
 
 	return maxLength
 }
