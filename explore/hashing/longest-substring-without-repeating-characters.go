@@ -54,3 +54,14 @@ func lengthOfLongestSubstring(s string) int {
 
 	return maxLength
 }
+
+/*
+func main() {
+
+	inputWord := "abcabcbb"
+	result := lengthOfLongestSubstring(inputWord)
+	fmt.Println(result)
+
+}
+
+*/
