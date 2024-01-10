@@ -28,7 +28,24 @@ of your solution will not be the focus of the assessment.
 
 */
 
-func Solution(N int, K int) string {
+// Solution generates a palindrome of length N with K distinct lowercase letters.
+func Solution(N, K int) string {
+	if N <= 0 || K <= 0 || K > 26 {
+		// Invalid input
+		return ""
+	}
 
-	return string(solution)
+	// Create a string with K distinct letters
+	letters := "abcdefghijklmnopqrstuvwxyz"[:K]
+
+	result := make([]byte, N)
+	i, j := 0, N-1
+
+	for i <= j {
+		result[i], result[j] = letters[i%K], letters[i%K]
+		i++
+		j--
+	}
+
+	return string(result)
 }
