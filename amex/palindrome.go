@@ -133,5 +133,25 @@ func reverseString(s string) string {
 	return reversed.String()
 }
 
+// To test it 
+
+package main
+
+import (
+	"fmt"
+	"github.com/your-username/your-package-name/solution"
+)
+
+func main() {
+	result1 := solution.Solution(5, 2)
+	fmt.Println(result1) // Output: abbba
+
+	result2 := solution.Solution(8, 3)
+	fmt.Println(result2) // Output: ppsccspp
+
+	result3 := solution.Solution(3, 2)
+	fmt.Println(result3) // Output: opo
+}
+
 
 
