@@ -240,3 +240,43 @@ func reverseString(s string) string {
 }
 
 // 5
+
+package solution
+
+import (
+	"strings"
+)
+
+// Solution generates a palindrome of length N with K distinct lowercase letters.
+func Solution(N, K int) string {
+	if N <= 0 || K <= 0 || K > 26 {
+		// Invalid input
+		return ""
+	}
+
+	// Create a string with K distinct letters
+	letters := "abcdefghijklmnopqrstuvwxyz"[:K]
+
+	// Build the first half of the palindrome
+	firstHalf := letters[:N/2]
+
+	// Create the second half by reversing the first half
+	secondHalf := reverseString(firstHalf)
+
+	// If N is odd, append the middle letter
+	if N%2 == 1 {
+		middleLetter := string(letters[K-1])
+		return firstHalf + middleLetter + secondHalf
+	}
+
+	return firstHalf + secondHalf
+}
+
+// reverseString reverses a given string
+func reverseString(s string) string {
+	var reversed strings.Builder
+	for i := len(s) - 1; i >= 0; i-- {
+		reversed.WriteByte(s[i])
+	}
+	return reversed.String()
+}
