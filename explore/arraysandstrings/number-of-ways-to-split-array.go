@@ -1,4 +1,7 @@
 /*
+ARRAYS AND STRINGS
+Prefix Sum
+
 2270. Number of Ways to Split Array
 
 Given an integer array nums, find the number
