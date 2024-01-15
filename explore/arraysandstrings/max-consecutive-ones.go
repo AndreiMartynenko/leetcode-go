@@ -1,5 +1,5 @@
 /*
-ARRAY AND STRINGS
+ARRAYS AND STRINGS
 Sliding Window
 
 Max Consecutive Ones III

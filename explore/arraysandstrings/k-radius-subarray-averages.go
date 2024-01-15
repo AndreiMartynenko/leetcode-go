@@ -1,5 +1,5 @@
 /*
-ARRAY AND STRINGS
+ARRAYS AND STRINGS
 Prefix Sum
 
 K Radius Subarray Averages

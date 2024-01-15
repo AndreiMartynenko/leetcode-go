@@ -1,5 +1,5 @@
 /*
-ARRAY AND STRINGS
+ARRAYS AND STRINGS
 Two Pointers
 
 392. Is Subsequence.

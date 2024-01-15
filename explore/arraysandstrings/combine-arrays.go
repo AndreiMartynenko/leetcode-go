@@ -1,5 +1,5 @@
 /*
-ARRAY AND STRINGS
+ARRAYS AND STRINGS
 Two Pointers
 
 Example 3: Given two sorted integer arrays arr1 and arr2,

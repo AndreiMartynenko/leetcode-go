@@ -1,5 +1,5 @@
 /*
-ARRAY AND STRINGS
+ARRAYS AND STRINGS
 Sliding Window
 
 Example 1: Given an array of positive integers
