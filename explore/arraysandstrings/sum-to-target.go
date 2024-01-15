@@ -1,4 +1,5 @@
 /*
+ARRAYS AND STRINGS
 Two Pointers
 
 Example 2: Given a sorted array of unique integers
