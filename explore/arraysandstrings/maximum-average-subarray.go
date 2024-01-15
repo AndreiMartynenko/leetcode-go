@@ -1,4 +1,5 @@
 /*
+ARRAY AND STRINGS
 Sliding Window
 
 Maximum Average Subarray I
