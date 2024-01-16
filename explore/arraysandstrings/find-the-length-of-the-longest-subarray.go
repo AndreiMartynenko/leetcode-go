@@ -11,7 +11,6 @@ longest subarray whose sum is less than or equal to k.
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -35,8 +34,12 @@ func lengthOfTheLongestSubarray(nums []int, k int) int {
 	return maxLength
 }
 
+/*
+
 func main() {
 	newArr := []int{3, 1, 2, 7, 4, 2, 1, 1, 5}
 	result := lengthOfTheLongestSubarray(newArr, 8)
 	fmt.Println(result)
 }
+
+*/
