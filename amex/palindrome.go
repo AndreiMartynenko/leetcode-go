@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 /*
 A palindrome is a ward which reads the same
 backward as forward. Some examples of palindromes
@@ -34,7 +36,7 @@ of your solution will not be the focus of the assessment.
 func Solution(N, K int) string {
 	if N <= 0 || K <= 0 || K > 26 {
 		// Invalid input
-		return ""
+		return "Invalid input"
 	}
 
 	// Create a string with K distinct letters
@@ -50,4 +52,9 @@ func Solution(N, K int) string {
 	}
 
 	return string(result)
+}
+
+func main() {
+	result := Solution(199, 26)
+	fmt.Println(result)
 }
