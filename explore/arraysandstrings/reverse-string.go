@@ -26,6 +26,8 @@ s[i] is a printable ascii character.
 
 package main
 
+import "fmt"
+
 /*
 func reverseString(s []byte) {
 	leftCharacter := 0
@@ -44,26 +46,26 @@ func reverseString(s []byte) {
 
 */
 
-// func reverseString(s []byte) {
 func reverseString(s []byte) []byte {
-	var leftCharacter = 0
-	var rightCharacter = len(s) - 1
+	left := 0
+	right := len(s) - 1
+	//swapedArr := []string{}
 
-	for leftCharacter < rightCharacter {
-		s[leftCharacter], s[rightCharacter] = s[rightCharacter], s[leftCharacter]
+	//i, j := 0, 0
 
-		leftCharacter++
-		rightCharacter--
+	for left < right {
+		s[left], s[right] = s[right], s[left]
+		fmt.Println(left, right)
+		left++
+		right--
+
 	}
-	//fmt.Println(s)
-	return s
 
+	return s
 }
 
-/*
 func main() {
 	var testWord = "Hello World!"
 	var newWord = reverseString([]byte(testWord))
 	fmt.Println(string(newWord))
 }
-*/

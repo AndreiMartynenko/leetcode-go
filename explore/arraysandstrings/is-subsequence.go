@@ -28,7 +28,7 @@ Output: false
 
 package main
 
-func isSubsequence(s string, t string) bool {
+func isSubsequence(s, t string) bool {
 	// Initialize two pointers, i and j, to track positions in s and t
 	i, j := 0, 0
 
@@ -41,6 +41,11 @@ func isSubsequence(s string, t string) bool {
 		// Move the pointer in t regardless
 		j++
 	}
+	/*
+		In Go, a boolean condition like i == len(s) in an if statement
+		or a return statement evaluates to either true or false based
+		on whether the condition is true or false.
+	*/
 
 	// If we reached the end of s, it means s is a subsequence of t
 	return i == len(s)

@@ -33,6 +33,7 @@ func combineArray(arr1 []int, arr2 []int) []int {
 	*/
 	for _, num := range arr1[i:] {
 		answer = append(answer, num)
+		
 	}
 
 	for _, num := range arr2[j:] {
