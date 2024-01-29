@@ -58,6 +58,7 @@ func longestOnes(nums []int, k int) int {
 	return maxOnes
 }
 
+/*
 // Helper function to return the maximum of two integers.
 func max(a, b int) int {
 	if a > b {
@@ -65,3 +66,4 @@ func max(a, b int) int {
 	}
 	return b
 }
+*/

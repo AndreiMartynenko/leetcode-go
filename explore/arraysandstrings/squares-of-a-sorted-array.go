@@ -26,25 +26,31 @@ Output: [4,9,9,49,121]
 
 package main
 
-import (
-	"sort"
-)
-
-func squaresOfaSortedAarray(nums []int) []int {
-	var newArr = []int{}
-	for i := 0; i < len(nums); i++ {
-		newArr = append(newArr, nums[i]*nums[i])
+func sortedSquares(nums []int) []int {
+	// Square each number in the array
+	squaredNums := make([]int, len(nums))
+	for i, num := range nums {
+		squaredNums[i] = num * num
 	}
-	sort.Ints(newArr)
 
-	return newArr
+	// Sort the squared numbers using insertion sort
+	for i := 1; i < len(squaredNums); i++ {
+		key := squaredNums[i]
+		j := i - 1
+		for j >= 0 && squaredNums[j] > key {
+			squaredNums[j+1] = squaredNums[j]
+			j = j - 1
+		}
+		squaredNums[j+1] = key
+	}
 
+	return squaredNums
 }
 
 /*
 func main() {
 	newArr := []int{-4, -1, 0, 3, 10}
-	result := squaresOfaSortedAarray(newArr)
+	result := sortedSquares(newArr)
 	fmt.Println(result)
 }
 */

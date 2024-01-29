@@ -27,8 +27,6 @@ as prefix_sum[y] - prefix_sum[x-1] (considering prefix_sum[-1] as 0).
 to determine whether it's less than limit.
 */
 
-import "fmt"
-
 func checkSubarraySum(nums []int, queries [][]int, limit int) []bool {
 	n := len(nums)
 
@@ -56,6 +54,7 @@ func checkSubarraySum(nums []int, queries [][]int, limit int) []bool {
 	return result
 }
 
+/*
 func main() {
 	nums := []int{1, 6, 3, 2, 7, 2}
 	queries := [][]int{{0, 3}, {2, 5}, {2, 4}}
@@ -64,3 +63,5 @@ func main() {
 	result := checkSubarraySum(nums, queries, limit)
 	fmt.Println(result) // Output: [true false true]
 }
+
+*/
