@@ -27,7 +27,8 @@ nums[i] is either 0 or 1.
 package main
 
 func findMaxLength(nums []int) int {
-	sumToIndex := make(map[int]int)
+	//sumToIndex := make(map[int]int)
+	sumToIndex := map[int]int{}
 	maxLen, sum := 0, 0
 
 	sumToIndex[0] = -1 // Initialize with a sum of 0 at index -1

@@ -1,9 +1,5 @@
 package main
 
-import (
-	"fmt"
-)
-
 func max(a, b int) int {
 	if a > b {
 		return a
@@ -32,7 +28,9 @@ func longestSubstring(s string) int {
 	return maxLength
 }
 
+/*
 func main() {
 	s := "1101100111"
 	fmt.Println("Length of the longest substring containing only '1':", longestSubstring(s))
 }
+*/

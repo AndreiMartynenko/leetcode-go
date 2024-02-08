@@ -26,10 +26,6 @@ Output: []
 
 package main
 
-import (
-	"fmt"
-)
-
 type TreeNode struct {
 	Val   int
 	Left  *TreeNode
@@ -73,6 +69,7 @@ func rightSideView(root *TreeNode) []int {
 	return result
 }
 
+/*
 func main() {
 	// Example usage:
 	// Constructing a binary tree: 1 -> 2 -> 5, 1 -> 3 -> nil, 2 -> 4 -> nil
@@ -93,3 +90,4 @@ func main() {
 	// Print the result.
 	fmt.Printf("Right Side View of Binary Tree: %v\n", result)
 }
+*/
