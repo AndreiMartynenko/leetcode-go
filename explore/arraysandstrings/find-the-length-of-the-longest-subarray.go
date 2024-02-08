@@ -56,12 +56,14 @@ func longestSubArraySum(nums []int, k int) int {
 
 }
 
+/*
 func max(a, b int) int {
 	if a > b {
 		return a
 	}
 	return b
 }
+*/
 
 func main() {
 	newArr := []int{3, 1, 2, 7, 4, 2, 1, 1, 5}
