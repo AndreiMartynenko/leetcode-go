@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -24,9 +23,10 @@ func hashString(s string, mod int) int {
 	return total % mod // limit the result to a modulo operation
 }
 
-func main() {
-	str := "abc"
-	mod := 100 // example of limited range of hash values
-	hashedValue := hashString(str, mod)
-	fmt.Printf("Хэш строки '%s': %d\n", str, hashedValue)
-}
+//
+//func main() {
+//	str := "abc"
+//	mod := 100 // example of limited range of hash values
+//	hashedValue := hashString(str, mod)
+//	fmt.Printf("Хэш строки '%s': %d\n", str, hashedValue)
+//}
