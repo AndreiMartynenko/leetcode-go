@@ -20,3 +20,5 @@ func main() {
 	result := searchElement(myCollection, targetElement)
 	fmt.Printf("Element %d is %s\n", targetElement, map[bool]string{true: "found", false: "not found"}[result])
 }
+
+// Testing for adding comments 
