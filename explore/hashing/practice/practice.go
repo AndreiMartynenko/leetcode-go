@@ -2,10 +2,6 @@ package main
 
 import "fmt"
 
-//hashMap := make(map[int]int)
-
-//Iterating over a map
-
 func main() {
 
 	hashMap := map[int]int{
@@ -13,6 +9,8 @@ func main() {
 		5: 3,
 		7: 2,
 	}
+
+	//hashMap := make(map[int]int)
 
 	//check if the key exists
 	value, ok := hashMap[1]
@@ -33,6 +31,7 @@ func main() {
 	//Get size of the map
 	size := len(hashMap)
 
+	//Iterating over a map
 	for key, value := range hashMap {
 		fmt.Println(key, value)
 	}
