@@ -9,9 +9,9 @@ func checkIfPangram(sentence string) bool {
 		if 'a' <= char && char <= 'z' {
 			seen[char] = true
 		}
-
 		return len(seen) == 26
 	}
+	return false
 }
 
 func main() {
