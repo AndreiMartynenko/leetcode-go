@@ -9,13 +9,13 @@ func checkIfPangram(sentence string) bool {
 		if 'a' <= char && char <= 'z' {
 			seen[char] = true
 		}
-		return len(seen) == 26
 	}
-	return false
+	return len(seen) == 26
 }
 
 func main() {
 	sentence := "thequickbrownfoxjumpsoverthelazydog"
+	//sentence2 := "leetcode"
 	result := checkIfPangram(sentence)
 	fmt.Println(result)
 }
