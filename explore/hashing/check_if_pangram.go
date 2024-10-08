@@ -14,8 +14,8 @@ func checkIfPangram(sentence string) bool {
 }
 
 func main() {
-	sentence := "thequickbrownfoxjumpsoverthelazydog"
-	//sentence2 := "leetcode"
+	//sentence := "thequickbrownfoxjumpsoverthelazydog"
+	sentence2 := "leetcode"
 	result := checkIfPangram(sentence)
 	fmt.Println(result)
 }
