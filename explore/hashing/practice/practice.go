@@ -36,3 +36,12 @@ func main() {
 		fmt.Println(key, value)
 	}
 }
+
+/*
+### Example 1:
+
+You have a string `s` and an integer `k`. Find the length of the longest substring that contains no more than `k` distinct characters.
+
+For example, if `s = "eceba"` and `k = 2`, the answer is 3. The longest substring with no more than 2 distinct characters is `"ece"`.
+
+*/
