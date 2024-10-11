@@ -45,3 +45,7 @@ You have a string `s` and an integer `k`. Find the length of the longest substri
 For example, if `s = "eceba"` and `k = 2`, the answer is 3. The longest substring with no more than 2 distinct characters is `"ece"`.
 
 */
+
+func lengthOfLongestSubstring(s string, k int) {
+
+}
