@@ -47,5 +47,21 @@ For example, if `s = "eceba"` and `k = 2`, the answer is 3. The longest substrin
 */
 
 func lengthOfLongestSubstring(s string, k int) {
+	hashMap := make(map[rune]int)
+	left := 0
+	maxLength := 0
+
+	for right, char := range s {
+		hashMap[char]++
+		for len(hashMap) > k {
+			hashMap[s[left]]--
+			if hashMap[s[left]] == 0 {
+				delete(hashMap, s[left])
+			}
+			left++
+		}
+		maxLength = max(maxLength, right-left+1)
+	}
+	return maxLength
 
 }
