@@ -47,6 +47,7 @@ For example, if `s = "eceba"` and `k = 2`, the answer is 3. The longest substrin
 */
 
 //Check if the key exists in the map
+//value, ok := hashMap[key]
 
 //func lengthOfLongestSubstring(s string, k int) {
 //	hashMap := make(map[rune]int)
