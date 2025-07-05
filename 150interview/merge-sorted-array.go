@@ -6,7 +6,7 @@ func merge(nums1 []int, m int, nums2 []int, n int) {
 	k := m + n - 1
 
 	for j >= 0 {
-		if i >= 0 && nums1[i] > nums[j] {
+		if i >= 0 && nums1[i] > nums2[j] {
 			i--
 		} else {
 			nums1[k] = nums2[j]
@@ -14,5 +14,4 @@ func merge(nums1 []int, m int, nums2 []int, n int) {
 		}
 		k--
 	}
-
 }
